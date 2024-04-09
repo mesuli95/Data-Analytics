@@ -2,6 +2,7 @@
 
 <details>
  <summary> Week 1 </summary>
+ 
 Introduction to Data Analytics
 
 * Analytics is at the heart of modern business. Virtually every organization collects large quantities of data about its customers, products, employees, and service offerings.
