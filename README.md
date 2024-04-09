@@ -3,7 +3,7 @@
 <details>
  <summary> Week 1 </summary>
  
-Introduction to Data Analytics
+# Introduction to Data Analytics
 
 * Analytics is at the heart of modern business. Virtually every organization collects large quantities of data about its customers, products, employees, and service offerings.
 * Managers naturally seek to analyze that data and harness the information it contains to improve the efficiency, effectiveness, and profitability of their work.
@@ -72,5 +72,31 @@ Data type
 Structured data
 
 * Structured data is tabular in nature and organized into rows and columns. Structured data is what typically comes to mind when looking at a spreadsheet. With clearly defined column headings, spreadsheets are easy to work with and understand. In a spreadsheet, cells are where columns and rows intersect.
+
+Character data
+
+* The character data type limits data entry to only valid characters. Characters can include the alphabet that you might see on your keyboard, as well as numbers. Depending on your needs, multiple data types are available that can enforce character limits.
+
+Alphanumeric
+
+* Alphanumeric is the most widely used data type for storing character-based data. As the name implies, alphanumeric is appropriate when a data element consists of both numbers and letters.
+* The alphanumeric data type is ideal for storing product stock-keeping units (SKUs).
+* It is common in the retail clothing space to have a unique SKU for each item available for sale. If you sell jeans, you may stock products from Armani Jeans, Diesel, Lee Jeans, Levi's, and Wrangler.
+* Tracking inventory at the SKU level allows you to manage availability in your online and in-store systems, all courtesy of the alphanumeric data type.
+
+Character Sets
+
+* When considering alphanumeric and text data types, you need to think about the character set you are using to input and store data when using a database. Databases use character sets to map, or encode, data and store it digitally. The ASCII encoding standard is based on the U.S. English alphabet.
+
+Numeric
+
+* When numbers exclusively make up values for a data attribute, numeric becomes the data type of choice. This data type appears to be simple and obvious based on its name. As seen with the character data type, implementation nuances about numeric are essential to understand. Databases accommodate two types of numeric data types: integer and numeric.
+
+Wohole numbers 
+
+* The integer, and all its subtypes, are for storing whole numbers. As seen with the character family of data types, implementation differences exist across databases.
+* 
+
+  
 
 </details>
