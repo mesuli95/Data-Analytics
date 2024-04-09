@@ -1,6 +1,8 @@
 # Data-Analytics
 
-Introduction to Data Analytics
+<details>
+ <summary> Week 1 </summary>
+#Introduction to Data Analytics
 
 * Analytics is at the heart of modern business. Virtually every organization collects large quantities of data about its customers, products, employees, and service offerings.
 * Managers naturally seek to analyze that data and harness the information it contains to improve the efficiency, effectiveness, and profitability of their work.
@@ -69,3 +71,5 @@ Data type
 Structured data
 
 * Structured data is tabular in nature and organized into rows and columns. Structured data is what typically comes to mind when looking at a spreadsheet. With clearly defined column headings, spreadsheets are easy to work with and understand. In a spreadsheet, cells are where columns and rows intersect.
+
+</details>
