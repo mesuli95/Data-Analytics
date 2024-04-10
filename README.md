@@ -123,6 +123,10 @@ Continuous Learning and Adaptation:
 * Databases, discussed in Chapter 3, use strong typing. A database column defined as numeric only accepts numerical values.
 * A database column defined as numeric only accepts numerical values. You will get an error if you attempt to enter characters into a numeric column.
 
+# Unstructured data
+
+* 
+
   
 
 </details>
