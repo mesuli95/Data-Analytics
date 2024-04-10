@@ -84,6 +84,14 @@ Continuous Learning and Adaptation:
 * It is common in the retail clothing space to have a unique SKU for each item available for sale. If you sell jeans, you may stock products from Armani Jeans, Diesel, Lee Jeans, Levi's, and Wrangler.
 * Tracking inventory at the SKU level allows you to manage availability in your online and in-store systems, all courtesy of the alphanumeric data type.
 
+# Data type names
+
+* Char
+* Varchar2
+* Varchar
+* CLOB
+* Varchar(max)
+* LONGTEXT
 # Character Sets
 
 * When considering alphanumeric and text data types, you need to think about the character set you are using to input and store data when using a database. Databases use character sets to map, or encode, data and store it digitally. The ASCII encoding standard is based on the U.S. English alphabet.
@@ -156,6 +164,17 @@ Continuous Learning and Adaptation:
 
  # video
 
+ * As is the case with audio data, the resolution has a significant impact on the storage a video consumes.
+ * Video duration is also another factor that impacts storage size.
+ * We see that every minute of video is equivalent to over 50 individual images, or more than 200 minutes of audio.
+
+ # Large text 
+
+ * I got to outline that data types names differ across vendor products
+
+# Categories of data
+
+  # Quantitative vs Qualitative
   
 
 </details>
