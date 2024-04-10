@@ -154,7 +154,7 @@ Continuous Learning and Adaptation:
  * Resolution is the most significant factor that governs how much space is required to store an image.
  * The greater the resolution, the more detail an image contains, and the more storage space it needs.
 
- # vid
+ # video
 
   
 
