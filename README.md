@@ -174,7 +174,37 @@ Continuous Learning and Adaptation:
 
 # Categories of data
 
-  # Quantitative vs Qualitative
+  # Quantitative data
   
+  * Regardless of structure, data is either quantitative or qualitative. Quantitative data consists of numeric values. Data elements whose values come from counting or measuring are quantitative.
+  * Quantitative data answers questions like “How many?” and “How much?” Qualitative data consists of frequent text values.
+  * example: the Height and Weight columns are quantitative
+
+# Qualitative data
+
+ * Qualitative data answers questions like “Why?” and “What?”
+ * Qualitative data answers questions like “Why?” and “What?”
+ * Example Pet Name, Animal Type, and Breed Name are all qualitative.
+
+# Discrete vs Continuous data
+
+ # Discrete 
+ 
+ * A helpful way to think about discrete data is that it represents measurements that can't be subdivided.
+ * Another way to think about it is that discrete data is useful when you have things you want to count.
+ * For example, a veterinary clinic may be interested in the number of dogs and cats under its care.
+
+# Continuous data
+
+*  Continuous data typically need a decimal point,
+*  Examples of continuous data are average weight and average height.
+*  Qualitative data is discrete, but quantitative data can be either discrete or continuous data.
+
+# Catagorical data
+
+* Text data with a known, finite number of categories is categorical.
+* When considering an individual data element, it is possible to determine whether or not it is categorical.
+* Animal Type is a good example of categorical data.
+* 
 
 </details>
