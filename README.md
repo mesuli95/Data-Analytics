@@ -125,7 +125,36 @@ Continuous Learning and Adaptation:
 
 # Unstructured data
 
-* 
+* Unstructured data is any type of data that does not fit neatly into the tabular model.
+* Examples of unstructured data include digital images, audio recordings, video recordings, and open-ended survey responses.
+* Analyzing unstructured data creates a wealth of information and insight.
+
+# Types of unstructured data
+
+  # Binary
+
+  * Binary data types are one of the most common data types for storing unstructured data.
+  * It supports any type of digital file you may have, from Microsoft Excel spreadsheets to digital photographs.
+  * When considering which binary data type to use, file size tends to be the limiting factor. You need to select a data type that is as large as the largest file you plan on storing.
+  * Databases offer a much more sophisticated collection of data types for storing binary data.
+  * 
+     
+  # Audio
+
+  * Audio data can come from a variety of sources. Whenever you interact with a customer service agent and hear “this call may be recorded for quality assurance purposes,” your conversation is probably being recorded and stored for later analysis.
+  * The impact of capturing, storing, and analyzing audio data has led to the development of avalanche detection systems.
+  * These systems listen for and detect the acoustic characteristics of an avalanche. With real-time notification capabilities, these systems reduce the time it takes for emergency services to respond and alert hikers to treacherous conditions.
+  *  In order to ingest audio data into a system and make it available for processing, data is first captured via a microphone.
+  *  The data is then digitized and stored. Audio can be stored in its raw form, which consumes the most storage space.
+  *  Alternatively, it can be encoded with a compression algorithm to reduce the amount of space required. Regardless of if it is in raw or compressed form, storing audio requires a data type designed to handle raw binary data.
+
+ # Images
+
+ * As the use of image data grows, understanding how it is stored is vital for the modern data analyst.
+ * Resolution is the most significant factor that governs how much space is required to store an image.
+ * The greater the resolution, the more detail an image contains, and the more storage space it needs.
+
+ # vid
 
   
 
