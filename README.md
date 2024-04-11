@@ -227,8 +227,26 @@ In order to facilitate analysis, data needs to be stored in a consistent, organi
 #  Unstructured data
 
 * Unstructured data is qualitative, describing the characteristics of an event or an object.
-* 
-mages, phrases, audio or video recordings, and descriptive text are all examples of unstructured data.
+* images, phrases, audio or video recordings, and descriptive text are all examples of unstructured data.
+* There is very little that is common about different kinds of unstructured data. Since the data is highly variable, its organizational and storage needs are different from structured data.
+* Unstructured data also represents a significant opportunity. A Forbes study shows that over 90 percent of businesses need to manage and derive value from unstructured data.
+* Machine data is a common source of unstructured data. Machine data has various sources, including Internet of Things devices, smartphones, tablets, personal computers, and servers.
+* As machines operate, they create digital footprints of their activity.
+* This data is unstructured and can identify machine-to-machine interaction.
+* Although some may think of machine data as digital exhaust, it is a treasure trove just waiting to be exploited by organizations.
+* A wide variety of technologies has emerged to facilitate the storage of unstructured data.
+* Operationally, these technologies are similar to how a key in a tabular dataset identifies its associated values.
+* With unstructured data, the key is a unique identifier, whereas the value is the unstructured data itself.
+
+# Semi-structured data 
+
+* Semi-structured data is data that has structure and that is not tabular.
+* Email is a well-known example of semi-structured data. Every email message has structural components, including recipient, sender, subject, date, and time.
+* However, the body of an email is unstructured text, while attachments could be anything type of file.
+* The need to make semi-structured data easier to work with has led to the emergence of semi-structured formatting options.
+* These formatting options use separators or tags to provide some context around a data element. Let's explore common file formats for transporting semi-structured data.
+
+
 
 
 </details>
