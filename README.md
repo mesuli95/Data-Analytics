@@ -100,7 +100,7 @@ Continuous Learning and Adaptation:
 
 * When numbers exclusively make up values for a data attribute, numeric becomes the data type of choice. This data type appears to be simple and obvious based on its name. As seen with the character data type, implementation nuances about numeric are essential to understand. Databases accommodate two types of numeric data types: integer and numeric.
 
-# Wohole numbers 
+# Whole numbers 
 
 * The integer, and all its subtypes, are for storing whole numbers. As seen with the character family of data types, implementation differences exist across databases.
 * In computer science, flags indicate whether something is on or off, or if a function has completed successfully. To show something is on, 1 or TRUE is used. For a value of off, 0 or FALSE is used.
