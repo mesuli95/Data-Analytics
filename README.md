@@ -208,5 +208,27 @@ Continuous Learning and Adaptation:
 * One of the reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
 
 
+# Common data structures
+In order to facilitate analysis, data needs to be stored in a consistent, organized manner. When considering structured data, several concepts and standards inform how to organize data. On the other hand, unstructured data has a wider variety of storage approaches.
+
+# Structure data
+
+* Tabular data is structured data, with values stored in a consistent, defined manner, organized into columns and rows.
+* Data is consistent when all entries in a column contain the same type of value.
+* This method of organization facilitates aggregation
+* However, structured data does not translate directly to data quality
+
+# Data entry error
+
+* Just as there is an expectation that the values in a given column are consistent, it is a convention that each row contains data about a single record.
+* It is a best practice to specify a key that uniquely identifies all values for a given row.
+* Once again, nothing structural prevents a person from incorrectly putting data about Thor into Alexander's row. However, the intent is that each row's data pertains to a single animal.
+
+#  Unstructured data
+
+* Unstructured data is qualitative, describing the characteristics of an event or an object.
+* 
+mages, phrases, audio or video recordings, and descriptive text are all examples of unstructured data.
+
 
 </details>
