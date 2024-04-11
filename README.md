@@ -265,6 +265,28 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 
 # Fixed-width files
 
-* Before it was common to use delimited files with variable-length columns, flat files were fixed-width
+* Before it was common to use delimited files with variable-length columns, flat files were fixed-width.
+* Fixed-width files are more laborious to create since they require a few extra steps.
+* The first row in a fixed-width file describes the column names.
+* For the data rows, you first need to determine the maximum length of each column.
+* Then, you must pad values that are shorter than the maximum length.
+*  For numeric fields, you accomplish padding by prepending a leading zero. For alphanumeric or text fields, this is done by prepending or appending spaces.
 
+# JavaScript Object Notation (JSON)
+
+* JavaScript Object Notation (JSON) is an open standard file format, designed to add structure to a text file without incurring significant overhead.
+* One of its design principles is that JSON is easily readable by people and easily parsed by modern programming languages.
+* Languages such as Python, R, and Go have libraries containing functions that facilitate reading and writing JSON files.
+
+# Extensible Markup Language (XML)
+
+* Extensible Markup Language (XML) is a markup language that facilitates structuring data in a text file.
+* While conceptually similar to JSON, XML incurs more overhead because it makes extensive use of tags.
+* Tags describe a data element and enclose each value for each data element. While these tags help readability, they add a significant amount of overhead.
+
+# HyperText Markup Language (HTML)
+
+* HyperText Markup Language (HTML) is a markup language for documents designed to be displayed in a web browser.
+* HTML pages serve as the foundation for how people interact with the World Wide Web.
+* Similar to XML, HTML is a tag-based language.
 </details>
