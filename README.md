@@ -246,7 +246,25 @@ In order to facilitate analysis, data needs to be stored in a consistent, organi
 * The need to make semi-structured data easier to work with has led to the emergence of semi-structured formatting options.
 * These formatting options use separators or tags to provide some context around a data element. Let's explore common file formats for transporting semi-structured data.
 
+# Common file formats
+Common file formats facilitate data exchange and tool interoperability. Several file formats have emerged as standards and are widely adopted.
 
+# Text file 
 
+* Text files are one of the most commonly used data file formats. As the name implies, they consist of plain text and are limited in scope to alphanumeric data.
+* One of the reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
+* Whether you are using a Microsoft Windows desktop, an Apple MacBook, or a Linux server, you can easily open a text file. Text files are also commonly referred to as flat files.
+* When machines generate data, the output is commonly stored in a text file.
+* A unique character known as a delimiter facilitates transmitting structured data via a text file.
+* The delimiter is the character that separates individual fields.
+* A delimiter can be any character. Over the years, the comma and tab grew into a widely accepted standard.
+* Various software packages support reading and writing delimited files using the comma and the tab.
+* In addition, many coding languages have libraries that make it easy to write comma- or tab-delimited files.
+* When a file is comma-delimited, it is known as a comma-separated values (CSV) file.
+* Similarly, when a file is tab-delimited, it is called a tab-separated values (TSV) file.
+
+# Fixed-width files
+
+* Before it was common to use delimited files with variable-length columns, flat files were fixed-width
 
 </details>
