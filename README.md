@@ -289,4 +289,39 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * HyperText Markup Language (HTML) is a markup language for documents designed to be displayed in a web browser.
 * HTML pages serve as the foundation for how people interact with the World Wide Web.
 * Similar to XML, HTML is a tag-based language.
+
+# Consider the values of what you will store before selecting the data type
+
+* Data types are used to store different kinds of values. When dealing with numeric information, the best option is a numeric data type that can accommodate decimals.
+* For sequences of whole numbers, an integer data type is a good choice. Be wary of using currency-specific data types—that can lead to calculation errors.
+* For text values, the alphanumeric data type is the optimal choice.
+* When dealing with dates, you will want to consider whether you need to store the time as well.
+* For binary data, including audio, video, and images, you should use a BLOB data type.
+
+# The rational model
+
+*  The relational model builds on the concept of tabular data.
+*  In the relational model, an entity contains data for a single subject.
+*  When creating an IT system, you need to consider all the entities required to make your system work.
+*  You can think of entities as nouns because they usually correspond to people, places, and things.
+
+# Entity
+
+* The header corresponds to the name of an entity, look at the rows of the Person entity.
+* Each row represents an individual attribute associated with a person.
+* Each of these entities becomes a separate table in the database, with a column for each attribute.
+* The power of the relational model is that it also allows us to describe how entities connect or relate, to each other. 
+
+# Entity relationship diagram
+
+* The entity relationship diagram (ERD) is a visual artifact of the data modeling process.
+* A relationship is a connection between entities. The symbols adjacent to an entity describe the relationship.
+
+# Cardinality
+
+* Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity.
+* You specify cardinality in an ERD with various line endings.
+* The first component of the terminator indicates whether the relationship between two entities is optional or required.
+* The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances. 
+  
 </details>
