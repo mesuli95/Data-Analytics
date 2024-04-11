@@ -205,6 +205,8 @@ Continuous Learning and Adaptation:
 * Text data with a known, finite number of categories is categorical.
 * When considering an individual data element, it is possible to determine whether or not it is categorical.
 * Animal Type is a good example of categorical data.
-* 
+* One of the reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
+
+
 
 </details>
