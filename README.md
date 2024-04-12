@@ -322,6 +322,19 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * Cardinality refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity.
 * You specify cardinality in an ERD with various line endings.
 * The first component of the terminator indicates whether the relationship between two entities is optional or required.
-* The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances. 
+* The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances.
+
+# Unary relationship
+
+* A unary relationship is when an entity has a connection with itself.
+* Binary relationships are the most common and easy to explore, whereas unary and ternary are comparatively complex and rare.
+
+# Binary 
+
+* A binary relationship connects two entities.
+
+# Ternary
+
+* A ternary relationship connects three entities.
   
 </details>
