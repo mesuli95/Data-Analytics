@@ -46,6 +46,14 @@ Continuous Learning and Adaptation:
 
 * modern data, storage, and computing capabilities.
 
+# Analytics process
+
+* Data acquisition
+* Cleaning & manipulation
+* Analysis
+* Visualisation
+* Reporting and communication
+
 # Analytics techniques
 
 * Descriptive analytics, which answers the question, “What happened?”
@@ -58,12 +66,23 @@ Continuous Learning and Adaptation:
 * Machine learning (ML) - is a subset of AI techniques. ML techniques attempt to apply statistics to data problems in an effort to discover new knowledge.
  Or, in other terms, ML techniques are AI techniques designed to learn.
 * Artificial intelligence (AI) - includes any type of technique where you are attempting to get a computer system to imitate human behavior. 
- as the name implies, you are trying to ask computer systems to artificially behave as if they were intelligent. Now, of course, it is not possible for a modern computer to function at the level of complex reasoning found in the human mind, but you can try to mimic some small portions of human behavior and judgment.
+ * As the name implies, you are trying to ask computer systems to artificially behave as if they were intelligent. Now, of course, it is not possible for a modern computer to function at the level of complex reasoning found in the human mind, but you can try to mimic some small portions of human behavior and judgment.
 * Deep learning - is a further subdivision of machine learning that uses quite complex techniques, known as neural networks, to discover knowledge in a particular way. It is a highly specialized subfield of machine learning that is most commonly used for image, video, and sound analysis.
+
+# Data gorvanance
+
+* Data governance programs ensure that the organization has high-quality data and is able to effectively control that data,
+
+# Data analytics tools
+
+* Software helps analysts work through each one of the phases of the analytics process.
+* These tools automate much of the heavy lifting of data analysis, improving the analyst's ability to acquire, clean, manipulate, visualize, and analyze data.
+* They also provide invaluable assistance in reporting and communicating results.
 
 # Data element
 
-* A data element is an attribute about a person, place, or thing containing data within a range of values. Data elements also describe characteristics of activities, including orders, transactions, and events. 
+* A data element is an attribute about a person, place, or thing containing data within a range of values.
+*  Data elements also describe characteristics of activities, including orders, transactions, and events.
 
 # Data type
 
