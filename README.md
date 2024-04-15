@@ -323,7 +323,7 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * When dealing with dates, you will want to consider whether you need to store the time as well.
 * For binary data, including audio, video, and images, you should use a BLOB data type.
 
-# The rational model
+# The relational model
 
 *  The relational model builds on the concept of tabular data.
 *  In the relational model, an entity contains data for a single subject.
@@ -353,13 +353,13 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 # Unary relationship
 
 * A unary relationship is when an entity has a connection with itself.
-* Binary relationships are the most common and easy to explore, whereas unary and ternary are comparatively complex and rare.
 
-# Binary 
+# Binary relationship
 
 * A binary relationship connects two entities. Example, relationship Connecting Animal and Person.
+* Binary relationships are the most common and easy to explore, whereas unary and ternary are comparatively complex and rare.
 
-# Ternary
+# Ternary relationship
 
 * A ternary relationship connects three entities. For example, you might use a ticket entity to connect a venue, a performing artist, and a price.
 * A ternary relationship connects three entities.
@@ -371,5 +371,28 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 *  When creating a database table, the ordering of columns does not matter because you can specify the column order when retrieving data from a table.
 *  When an attribute becomes a column, you assign it a data type.
 *  Completing all of this work results in a diagram known as a schema.
+
+# Pulling of data
+
+*  To pull data from a relational database table, you perform a query. You compose queries using a programming language called Structured Query Language (SQL).
+*  Your query needs to perform a database join to retrieve the data to substitute in the email reminder.
+* A join uses data values from one table to retrieve associated data in another table, typically using a foreign key.
+
+# Foreign key
+
+* Foreign keys enforce referential integrity, or how consistent the data is in related tables.
+
+# Non-relational
+
+* A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data.
+# Key value
+
+* A key-value database is one of the simplest ways of storing data. Data is stored as a collection of keys and their corresponding values.
+* A key must be globally unique across the entire database.
+* The use of keys differs from a relational database, where a given key identifies an individual row in a specific table.
+
+# Document
+
+*  
   
 </details>
