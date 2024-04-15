@@ -202,7 +202,6 @@ Continuous Learning and Adaptation:
 # Qualitative data
 
  * Qualitative data answers questions like “Why?” and “What?”
- * Qualitative data answers questions like “Why?” and “What?”
  * Example Pet Name, Animal Type, and Breed Name are all qualitative.
 
 # Discrete vs Continuous data
@@ -225,6 +224,13 @@ Continuous Learning and Adaptation:
 * When considering an individual data element, it is possible to determine whether or not it is categorical.
 * Animal Type is a good example of categorical data.
 * One of the reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
+
+# Dimentional data
+
+* Dimensional modeling is an approach to arranging data to facilitate analysis. Dimensional modeling organizes data into fact tables and dimension tables.
+* Fact tables store measurement data that is of interest to a business.
+* Dimensions are tables that contain data about the fact.
+* Dimensional data contains groupings of individual attributes about a given subject.
 
 
 # Common data structures
