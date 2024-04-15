@@ -10,6 +10,7 @@
 * The ultimate role of a data analyst is to transform raw data into actionable insights that guide decision-making processes within an organization. 
 * This involves several key responsibilities and skills.
 
+# Keys responsibilities of data analysts
 # Data Collection and Preparation:
 
 * Sourcing data from various channels, including databases, spreadsheets, and external sources,
