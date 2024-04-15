@@ -165,7 +165,6 @@ Continuous Learning and Adaptation:
   * It supports any type of digital file you may have, from Microsoft Excel spreadsheets to digital photographs.
   * When considering which binary data type to use, file size tends to be the limiting factor. You need to select a data type that is as large as the largest file you plan on storing.
   * Databases offer a much more sophisticated collection of data types for storing binary data.
-  * 
      
   # Audio
 
