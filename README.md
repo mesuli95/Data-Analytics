@@ -323,6 +323,7 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * You specify cardinality in an ERD with various line endings.
 * The first component of the terminator indicates whether the relationship between two entities is optional or required.
 * The second component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances.
+*  ERDs are particularly useful when formulating how to retrieve information from the database that is spread across multiple tables because the diagrams allow you to visualize the connections between entities.
 
 # Unary relationship
 
@@ -331,10 +332,19 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 
 # Binary 
 
-* A binary relationship connects two entities.
+* A binary relationship connects two entities. Example, relationship Connecting Animal and Person.
 
 # Ternary
 
+* A ternary relationship connects three entities. For example, you might use a ticket entity to connect a venue, a performing artist, and a price.
 * A ternary relationship connects three entities.
+
+# Relational databases
+
+* Relational databases are pieces of software that let you make an operational system out of an ERD.
+*  You start with a relational model and create a physical design. Relational entities correspond to database tables, and entity attributes correspond to table columns.
+*  When creating a database table, the ordering of columns does not matter because you can specify the column order when retrieving data from a table.
+*  When an attribute becomes a column, you assign it a data type.
+*  Completing all of this work results in a diagram known as a schema.
   
 </details>
