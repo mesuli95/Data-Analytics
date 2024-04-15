@@ -236,7 +236,7 @@ Continuous Learning and Adaptation:
 # Common data structures
 In order to facilitate analysis, data needs to be stored in a consistent, organized manner. When considering structured data, several concepts and standards inform how to organize data. On the other hand, unstructured data has a wider variety of storage approaches.
 
-# Structure data
+# Structured data
 
 * Tabular data is structured data, with values stored in a consistent, defined manner, organized into columns and rows.
 * Data is consistent when all entries in a column contain the same type of value.
