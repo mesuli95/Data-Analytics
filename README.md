@@ -323,6 +323,10 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * When dealing with dates, you will want to consider whether you need to store the time as well.
 * For binary data, including audio, video, and images, you should use a BLOB data type.
 
+</details>
+<details>
+ <summary> Week 1 </summary>
+
 # The relational model
 
 *  The relational model builds on the concept of tabular data.
@@ -390,9 +394,31 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 * A key-value database is one of the simplest ways of storing data. Data is stored as a collection of keys and their corresponding values.
 * A key must be globally unique across the entire database.
 * The use of keys differs from a relational database, where a given key identifies an individual row in a specific table.
+* There are no structural limits on the values of a key. A key can be a sequence of numbers, alphanumeric strings, or some other combination of values.
 
 # Document
 
-*  
+* A document database is similar to a key-value database, with additional restrictions. In a key-value database, the value can contain anything.
+* With a document database, the value is restricted to a specific structured format.
+* With a known, structured format, document databases have additional flexibility beyond what is possible with key-value.
+
+# Column family
+
+* Column-family databases use an index to identify data in groups of related columns. A relational database stores the data in Table 3.2 in a single table, where each row contains the Person_ID, Title, First_Name, Middle_Name, Last_Name, and Email columns.
+* In a column-family database, the Person_ID becomes the index, while the other columns are stored independently.
+* This design facilitates distributing data across multiple machines, which enables handling massive amounts of data.
+* The main reason for choosing a column-family database is its ability to scale.
+
+# Graph 
+
+* Graph databases specialize in exploring relationships between pieces of data.
+* Graph models map relationships between actual pieces of data.Relational models focus on mapping the relationships between entities.
+* Graphs are an optimal choice if you need to create a recommendation engine, as graphs excel at exploring relationships between data.
+* Understanding the connection between products is a challenge that graphs solve with ease.
+
+# Database use cases
+
+* Different business needs require different database designs. While all databases store data, the database's structure needs to match its intended purpose. Business requirements impact the design of individual tables and how they are interconnected.
+* Transactional and reporting systems need different implementation approaches to serve the people who use them efficiently.42
   
 </details>
