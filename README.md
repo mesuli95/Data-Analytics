@@ -455,11 +455,75 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 
 * A data warehouse is a database that aggregates data from many transactional systems for analytical purposes.
 * Transactional data may come from systems that power the human resources, sales, marketing, and product divisions.
-* A data mart is a subset of a data warehouse. Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+*  A data warehouse facilitates analytics across the entire company.
 
 # Data mart
 
 * A data mart is a subset of a data warehouse.
-* Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization. 
-  
+* Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+* For example, suppose an organization wants to do analytics on their employees to understand retention and career evolution trends. 
+*  To satisfy that use case, you can create a data mart focusing on the human resources subject area from the data warehouse.
+
+ # Data lake 
+
+ * A data lake stores raw data in its native format instead of conforming to a relational database structure.
+ * Using a data lake is more complex than a data warehouse or data mart, as it requires additional knowledge about the raw data to make it analytically useful.
+ * Relational databases enforce a structure that encapsulates business rules and business logic, both of which are missing in a data lake.
+
+# Star schema design
+
+* The star schema design to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram.
+* At the centre of the star is a fact table. Fact tables chiefly store numerical facts about a business.
+* Qualitative data, including names, addresses, and descriptions, is stored in a series of dimension tables that connect to the main fact table.
+* When data moves from an OLTP design into a star schema, there is a significant amount of data duplication.
+* As such, a star schema consumes more space than its associated OLTP design to store the same data.
+* These additional resource needs are one of the factors that makes data warehouses expensive to operate.
+
+# Snowflake
+
+* Another design pattern for data warehousing is the snowflake schema.
+* As its name implies, the schema diagram looks like a snowflake.
+* Snowflake and star schemas are conceptually similar in that they both have a central fact table surrounded by dimensions.
+* Where the approaches differ is in the handling of dimensions. With a star, the dimension tables connect directly to the fact table.
+* With a snowflake, dimensions have subcategories, which gives the snowflake design its shape.
+* A snowflake schema is less denormalized than the star schema.
+* With a snowflake schema, you may need more than one join to get the data you are looking for.
+* Recall that as the number of tables in a schema grows, queries become more complicated.
+* A snowflake schema query is more complex than the equivalent query in a star schema.
+* Part of the trade-off is that a snowflake schema requires less storage space than a star schema.
+* Data warehouses often use snowflake schemas, since many different systems supply data to the warehouse.
+* Data marts are comparatively less complicated, because they represent a single data subject area. As such, data marts frequently use a star-schema approach.
+
+# Dimenstionality
+
+* Dimensionality refers to the number of attributes a table has.
+* The greater the number of attributes, the higher the dimensionality.
+* A dimension table provides additional context around data in fact tables.
+* It is crucial to understand the types of questions an analyst will need to answer when designing dimension tables.
+
+# Handling Dimentionality 
+
+* There are multiple ways to design dimensions.
+* An understanding of this method is required to write a query to retrieve the current price.
+* Another method extends the snowflake approach to modelling dimensions.
+* You have a product dimension for the current price and a product history table for maintaining price history.
+* One advantage of this approach is that it is easy to retrieve the current price while maintaining access to historical information.
+* Another approach is to use an indicator flag for the current price.
+* The indicator flag method keeps all pricing data in a single place.
+* It also simplifies the query structure to get the current price. Instead of doing date math, you look for the price where the Current flag equals “Y.”
+* It is also possible to use the effective date approach to handling price changes.
+* There is additional complexity with the effective date approach because queries have to perform date math to determine the price.
+
+# Data Acquisition Concepts
+
+# Integration
+
+* Data from transactional systems flow into data warehouses and data marts for analysis.
+* Recall that OLTP and OLAP databases have different internal structures.
+* You need to retrieve, reshape, and insert data to move data between operational and analytical environments.
+* You can use a variety of methods to transfer data efficiently and effectively.
+* One approach is known as extract, transform, and load (ETL). As the name implies, this method consists of three phases.
+
+# Extract
+
 </details>
