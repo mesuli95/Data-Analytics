@@ -526,4 +526,173 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 
 # Extract
 
+*  In the first phase, you extract data from the source system and place it in a staging area. The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+
+# Transform
+
+*  The second phase transforms the data. The goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+
+# Load
+
+*  The purpose of the load phase is to ensure data gets into the analytical system as quickly as possible.
+
+# Extract, load and transform (ELT)
+
+* With ELT, data is extracted from a source database and loaded directly into the data warehouse.
+* Once the extract and load phases are complete, the transformation phase gets underway.
+* One key difference between ETL and ELT is the technical component performing the transformation.
+* With ETL, the data transformation takes place external to a relational database, using a programming language like Python. ELT uses SQL and the power of a relational database to reformat the data.
+* ELT has an advantage in the speed with which data moves from the operational to the analytical database.
+* Suppose you need to get massive amounts of transactional data into an analytical environment as quickly as possible.
+* In that case, ELT is a good choice, especially at scale when the data warehouse has a lot of capacity.
+* Whether you choose ETL or ELT is a function of organizational need, staff capabilities, and technical strategy.
+
+# ETL Vendors
+
+* Whether you choose ETL or ELT for loading your data warehouse, you don't have to write transformations by hand.
+* Many products support both ETL and ELT.
+
+# Delta load 
+
+* An initial load occurs the first time data is put into a data warehouse.
+* After that initial load, each additional load is a delta load, also known as an incremental load.
+* A delta load only moves changes between systems.
+* The initial load happens right before the data warehouse becomes available for use.
+* The frequency with which delta loads happen depends on business requirements.
+* Depending on how fresh the data needs to be, delta loads can happen at any interval.
+* When moving data between systems, you have to balance the speed and complexity of the overall operation.
+
+# Data Collection Methods
+
+* Augmenting data from your transactional systems with external data is an excellent way to improve the analytical capabilities of your organization.
+* For example, suppose you operate a national motorcycle rental fleet and want to determine if you need to rebalance your fleet across your existing locations.
+* You also want to evaluate whether it is profitable to expand to a new geographic region, as well as predict the best time and place to add motorcycles to your fleet.
+
+# The Methods include:
+
+# Application Programming Interfaces (APIs)
+
+* An application programming interface (API) is a structured method for computer systems to exchange information.
+* APIs provide a consistent interface to calling applications, regardless of the internal database structure.
+* Whoever calls an API has no idea whether a transactional or analytical data store backs it.
+* The internal data structure does not matter as long as the API returns the data you want.
+* APIs can be transactional, returning data as JSON objects. APIs can also facilitate bulk data extraction, returning CSV files.
+* APIs represent a specific piece of business functionality. Let's return to our motorcycle rental business.
+
+# Web Services
+
+* A web service is an API you can call via Hypertext Transfer Protocol (HTTP), the language of the World Wide Web.
+* Many smartphone applications need a network connection, either cellular or Wi-Fi, to work correctly.
+* The reason is that much of the data these applications need is not on the smartphone itself.
+* Instead, data is found in private and public data sources and is accessible via a web service.
+* If you imagine an API as the door behind which data treasures exist, an API key is what unlocks the door.
+* API providers generate a unique API key for each calling application.
+* Centralized creation and distribution of API keys allow the provider to understand who is using the API and to turn off individual keys' access in the event of abuse.
+
+# Web Scraping
+
+* Some of the data you want may not be available internally as an API or publicly via a web service.
+* However, data may exist on a website.
+* As seen in Chapter 2, data can present itself in an HTML table on a web page.
+* If data exists in a structured format, you can retrieve it programmatically.
+* Programmatic retrieval of data from a website is known as web scraping.  
+* You can use software bots to scrape data from a website.
+* Many modern programming languages, including Python and R, make it easy to create a web scraper.
+* Instead of using an API or a web service, a web scraper reads a web page similar to a browser, such as Chrome, Safari, or Edge.
+* Web scrapers read and parse the HTML to extract the data the web pages contain.
+* The search results for some websites span multiple web pages.
+* Your web scraper has to account for pagination to ensure that you are not leaving any data behind.
+* The scraper must understand how many result pages exist and then iterate through them to harvest the data.
+
+# Human-in-the-Loop
+
+* There are times when the data you seek exists only in people's minds.
+* For example, you can extract the most popular and profitable motorcycling destination from your existing internal data.
+* You can get weather information from an API packaged as a web service.
+* You can glean insight into competitive pricing by scraping your competitors' websites.
+* Even with all of these data sources, you may still want insight into how customers feel about the services you provide.
+
+# Surveys
+
+* One way to collect data directly from your customers is by conducting a survey.
+* The most simplistic surveys consist of one question and indicate customer satisfaction.
+* As you design a survey, you want to keep in mind how you will analyse the data you collect.
+* Numeric data is easy to analyse using a variety of statistical methods.
+* Free-response questions result in unstructured text data, which is more challenging to interpret.
+* You need to clearly understand what is essential to your organization and what decisions you will make using the output to develop and administer an impactful survey.
+
+# Survey tools
+
+* Instead of designing a custom application to collect survey data, several survey products let you design complex surveys without worrying about building a database.
+* Qualtrics is a powerful tool for developing and administering surveys.
+* What makes Qualtrics so compelling is its API, which you can use to integrate survey response data into a data warehouse for additional analysis.
+
+# Observation
+
+* Observation is the act of collecting primary source data, from either people or machines.
+* Observational data can be qualitative or quantitative. Collecting qualitative observational data leads to unstructured data challenges.
+* Quantitative observations are much easier to collect and interpret.
+* For example, suppose you are trying to establish the defect rate on a production line.
+* You can count the number of vehicles that come off the line, as well as how many fail post-production quality checks.
+
+# Sampling
+
+*Regardless of the data acquisition approach, you may end up with more data than is practical to manipulate. 
+
+# Working With Data
+
+* Determining an appropriate database structure, identifying data sources, and loading a database takes a considerable amount of effort.
+* To turn a database design into an operational database ready to accept data, you use the Data Definition Language (DDL) components of SQL.
+* DDL lets you create, modify, and delete tables and other associated database objects.
+* To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases.
+* While DDL manages the structure of a database, DML manages the data in the database.
+* The DML components of SQL change very slowly. As long as relational databases exist, you will need to understand SQL to work with them.
+* It is worth learning SQL, as the foundational knowledge of DML operations will serve you well.
+
+# Data Manipulation
+When manipulating data, one of four possible actions occurs:
+
+* Create new data.
+* Read existing data.
+* Update existing data.
+* Delete existing data.
+* The acronym CRUD (Create, Read, Update, Delete) is a handy way to remember these four operations.
+
+# Data manipulation in SQL
+
+* Create with keyword INSERT - Create new data in an existing table.
+* Read with keyword SELECT - Retreives data from an existing table.
+* Update with keyword UPDATE - Changes existing data in an existing table.
+* Delete with keyword DELETE - Removes existing data from an existing table.
+* The FROM clause in a query identifies the source of data, which is frequently a database table. Both the SELECT and FROM clauses are required for a SQL statement to return data.
+
+# SQL Considerations 
+
+* The keywords in SQL are case-insensitive. However, the case-sensitivity of column names and values depend on the database configuration.
+* SQL can also span multiple lines. For example, rewriting the previous query as follows will return identical results.
+* How a query appears is a function of organizational conventions.
+* Factors that influence convention include database configuration, query efficiency, and how easy it is for people to read and understand the query.
+
+# Filtering
+
+* Examining a large table in its entirety provides insight into the overall population.
+* To answer questions that an organization's leadership has typically requires a subset of the overall data.
+* Filtering is a way to reduce the data down to only the rows that you need.
+* To filter data, you add a WHERE clause to a query.
+* Note that the column you are filtering on does not have to appear in the SELECT clause.
+
+# Filtering and Logical Operators
+
+* A query can have multiple filtering conditions. You need to use a logical operator to account for complex filtering needs.
+* For example, suppose you need to retrieve the name and breed for dogs weighing more than 60 pounds.
+* In that case, you can enhance the query using the AND logical operator.
+* The AND operator evaluates the Animal_Type and Weight filters together, only returning records that match both criteria.
+* OR is another frequently used logical operator.
+* Complex queries frequently use multiple logical operators at the same time.
+* It is good to use parentheses around filter conditions to help make queries easy for people to read and understand.
+* Filtering data is essential to making effective use of these massive data stores.
+
+# Sorting 
+  
+
 </details>
