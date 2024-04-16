@@ -325,7 +325,7 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 
 </details>
 <details>
- <summary> Week 1 </summary>
+ <summary> Week 2 </summary>
 
 # The relational model
 
@@ -419,6 +419,47 @@ Common file formats facilitate data exchange and tool interoperability. Several 
 # Database use cases
 
 * Different business needs require different database designs. While all databases store data, the database's structure needs to match its intended purpose. Business requirements impact the design of individual tables and how they are interconnected.
-* Transactional and reporting systems need different implementation approaches to serve the people who use them efficiently.42
+* Transactional and reporting systems need different implementation approaches to serve the people who use them efficiently.
+* Databases tend to support two major categories of data processing: Online Transactional Processing (OLTP) and Online Analytical Processing (OLAP).
+
+# Online Transactional Processing 
+
+* OLTP systems handle the transactions we encounter every day. Example transactions include booking a flight reservation, ordering something online, or executing a stock trade.
+* While the number of transactions a system handles on a given day can be very high, individual transactions process small amounts of data.
+* OLTP systems balance the ability to write and read data efficiently.
+
+# Normalization
+
+* Normalization is a process for structuring a database in a way that minimizes duplication of data.
+* One of the principles is that a given piece of data is stored once and only once. As a result, a normalized database is ideal for processing transactions.
+* First normal form (1NF) is when every row in a table is unique and every column contains a unique value.
+* Second normal form (2NF) starts where 1NF leaves off.
+* In addition to each row being unique, 2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key.
+* Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key.
+
+# Online Analytical Processing
+
+* OLAP systems focus on the ability of organizations to analyze data.
+* While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different.
+* OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
+* On the other hand, databases that power OLAP systems have a denormalized design. Instead of having data distributed across multiple tables, denormalization results in wider tables than those found in an OLTP database.
+* It is more efficient for analytical queries to read large amounts of data for a single table instead of incurring the cost of joining multiple tables together.
+* The greater the number of joins, the more complex the query.
+* The more complex the query, the longer it takes to retrieve results.
+
+# Schema Concepts
+
+* The design of a database schema depends on the purpose it serves. Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems.
+
+# Data warehouse
+
+* A data warehouse is a database that aggregates data from many transactional systems for analytical purposes.
+* Transactional data may come from systems that power the human resources, sales, marketing, and product divisions.
+* A data mart is a subset of a data warehouse. Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+
+# Data mart
+
+* A data mart is a subset of a data warehouse.
+* Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization. 
   
 </details>
