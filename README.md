@@ -703,6 +703,96 @@ When manipulating data, one of four possible actions occurs:
 
 # Data Functions
 
- * 
+*  Date columns also appear in transactional systems.
+*  Storing date information about an event facilitates analysis across time.
+*  The most important thing to note is that you have to understand the database platform you are using and how that platform handles dates and times.
+* Since each platform provider uses different data types for handling this information, you need to familiarize yourself with the functions available from your provider of choice.
+
+# Logical Functions
+
+* Logical functions can make data substitutions when retrieving data.
+* Remember that a SELECT statement only retrieves data.
+* The data in the underlying tables do not change when a SELECT runs.
+* When writing SQL, there are frequently many ways to write a query and create the same results.
+* Boolean Expression:  The expression must return either TRUE or FALSE.
+* True Value:  If the Boolean expression returns TRUE, the IFF function will return this value.
+* False Value:  If the Boolean expression returns FALSE, the IFF function will return this value.
+
+# Aggregate Functions 
+
+* Summarized data helps answer questions that executives have, and aggregate functions are an easy way to summarize data.
+* Aggregate functions summarize a query's data and return a single value.
+* While each database platform supports different aggregation functions.
+* COUNT - Returns the total number of rows of a query.
+* MIN - Returns the minimum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+* MAX - Returns the maximum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+* AVG - Returns the mathematic average of the results of a query.
+* SUM - Returns the sum of the results of a query.
+* STDDEV - Returns the sample standard deviation of the results of a query.
+* You can also use aggregate functions to filter data.
+* System functions also return data about the database environment.
+* For example, whenever a person or automated process uses data from a database, they need to establish a database session.
+* A database session begins when a person/program connects to a database.
+* The session lasts until the person/program disconnects.
+* For example, a poorly written query can consume most of the resources available to the database.
+
+# Query Optimization
+
+* Writing an SQL query is straightforward. Writing a SQL query that efficiently does what you intend can be more difficult. There are several factors to consider when creating well-performing SQL.
+
+# Parametrization
+
+* Whenever a SQL query executes, the database has to parse the query. 
+* Parsing translates the human-readable SQL into code the database understands.
+* Parsing takes time and impacts how long it takes for a query to return data. 
+* Effective use of parameterization reduces the number of times the database has to parse individual queries.
+* Suppose you operate a website and want to personalize it for your customers. Login details serve as parameters to the query to retrieve your information for display.
+* After logging in, a customer sees a welcome message identifying them by name.
+* Instead of looking specifically for an exact string match for every customer, the query uses a variable called &customer_name.
+* The code in the web server populates the variable with the appropriate customer name.
+* To the database, this appears as a single query.
+* While the value of &customer_name changes for every customer, the database parses it only once.
+
+# Indexing
+
+* When retrieving data from a table, the database has to scan each row until it finds the ones that match the filters in the WHERE clause.
+* The process of looking at each row is called a full table scan.
+* As data volumes increase, scanning the entire table takes a long time and is not efficient.
+* To speed up query performance, you need a database index.
+* A database index works like the index in the back of a book.
+*  Instead of looking at each page in a book to find what you are looking for, you can find a specific page number in the index and then go to that page.
+* A database index can point to a single column or multiple columns.
+* When running queries on large tables, it is ideal if all of the columns you are retrieving exist in the index.
+* If that is not feasible, you at least want the first column in your SELECT statement to be covered by an index.
+* If a query is running slowly, look at the indexes on the underlying tables. If you think a new index would help improve query performance.
+* While indexing improves query speed, it slows down create, update, and delete activity.
+* An indexing strategy needs to match the type of system the database supports, be it transactional or reporting.
+
+# Data Subsets and Temporary Tables
+
+* When dealing with large data volumes, you may want to work with a subset of records.
+* In this situation, the Order table in the data warehouse would have 2 billion rows.
+* If you want to explore trends for a specific customer's order history, it would not be efficient to query the main Order table.
+* It is possible to create a temporary table to make the data more manageable.
+* Temporary tables can store the results of a query and are disposable.
+* Temporary tables automatically get removed when the active session ends.
+* Using temporary tables is an effective method of creating subsets for ad hoc analysis.
+* For example, you can establish a database session, create a temporary table with the order history for a single customer, run queries against that temporary table, and disconnect from the database.
+* When the session disconnects, the database automatically purges any temporary tables created during the session.
+
+# Execution Plan
+
+* An execution plan shows the details of how a database runs a specific query.
+* Execution plans are extremely helpful in troubleshooting query performance issues.
+* They provide additional information about how a query is spending its time.
+* For example, an execution plan can tell you if a slow-running query uses a full table scan instead of an index scan.
+* In this case, it could be that the query is poorly written and not using the existing indexes.
+* It also could be that a column needs a new index.
+* Looking at execution plans is an integral part of developing efficient queries.
+* It is worth understanding the nuances of how to interpret execution plans for the database platform you use. 
+
+
+
+
 
 </details>
