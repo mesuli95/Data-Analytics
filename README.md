@@ -844,7 +844,27 @@ When manipulating data, one of four possible actions occurs:
 
  # Nonparametric Data
 
- * 
+ * Nonparametric data is data collected from categorical variables.
+
+# Data Outliers
+
+* A data outlier is a value that differs significantly from other observations in a dataset.
+* With outliers, you need to understand why they exist and whether they are valid in the context of your analysis.
+* Outliers exist regardless of data type.
+
+# Specification Mismatch
+
+* A specification describes the target value for a component.
+* A specification mismatch occurs when an individual component's characteristics are beyond the range of acceptable values.
+* When data is invalid, it has values that fall outside a given range.
+* On the other hand, a specification mismatch occurs when data does not conform to its destination data type.
+* For example, you might be loading data from a file into a database.
+* If the destination column is numeric and you have text data, you'll end up with a specification mismatch.
+* To resolve this mismatch, you must validate that the inbound data consistently maps to its target data type.
+
+# Data type Validation
+
+* 
 
 
 
