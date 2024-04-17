@@ -818,7 +818,18 @@ When manipulating data, one of four possible actions occurs:
 * When an address changes, the ETL job sets the effective end date for the old address and inserts a new row for the current address.
 * While the data discrepancy between the Sales and Accounting systems still needs resolution, the analyst has the proper customer address in the data warehouse.
 * Another root cause of data redundancy is an inappropriate database design.
-* 
+
+# Missing Values
+
+* Another issue that impacts data quality is the concept of missing values.
+* Missing values occur when you expect an attribute to contain data but nothing is there.
+* Missing values are also known as null values. A null value is the absence of a value.
+* There are situations when allowing nulls makes sense.
+* Suppose you are storing data about people and have a column for Middle Initial.
+* Null values present several challenges depending on the tools you use to analyze data.
+* Trying to calculate the average, which was successful in SQL, results in an error in Python and R as the equivalent functions in those languages do not handle null values.
+* To handle missing values, you first have to check for their existence.
+* QL offers functions to check for null and functions that can replace a null with a user-specified value. 
 
 
 
