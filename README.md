@@ -693,6 +693,16 @@ When manipulating data, one of four possible actions occurs:
 * Filtering data is essential to making effective use of these massive data stores.
 
 # Sorting 
-  
+
+* When querying a database, you frequently specify the order in which you want your results to return.
+* The ORDER BY clause is the component of a SQL query that makes sorting possible.
+* Similar to how the WHERE clause performs, you do not have to specify the columns you are using to sort the data in the SELECT clause.
+* The ASC keyword at the end of the ORDER BY clause sorts in ascending order whereas using DESC with ORDER BY sorts in descending order.
+* If you are sorting on multiple columns, you can use both ascending and descending as appropriate.
+* Both the ASC and DESC keywords work across various data types, including date, alphanumeric, and numeric.
+
+# Data Functions
+
+ * 
 
 </details>
