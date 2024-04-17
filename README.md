@@ -791,6 +791,35 @@ When manipulating data, one of four possible actions occurs:
 * Looking at execution plans is an integral part of developing efficient queries.
 * It is worth understanding the nuances of how to interpret execution plans for the database platform you use. 
 
+# Data Quality Challenges
+
+# Duplicate Data
+
+* Duplicate data occurs when data representing the same transaction is accidentally duplicated within a system. Suppose you want to open a spreadsheet on your local computer.
+* To open the spreadsheet, you locate the file and double-click it.
+* This method of opening documents establishes muscle memory that associates double-clicking with the desired action.
+* Humans are primarily responsible for creating duplicate data. System architects work diligently to prevent duplicate data from being created.
+* The best way to resolve duplicate data is to prevent its creation in the first place.
+* One common approach to stopping duplicate data before it gets into a system is a visual warning to alert users.
+* To resolve duplicate data issues, the company has a duplicate resolution process.
+* This process looks for customers with multiple billing addresses, validates the correct address, and updates the Sales database by removing the duplicate record.
+
+# Redundant Data
+
+* While duplicate data typically comes from accidental data entry, redundant data happens when the same data elements exist in multiple places within a system.
+* Frequently, data redundancy is a function of integrating multiple systems.
+* For example, multiple source systems that perform different business functions and use shared data elements create the conditions for data redundancy.
+* When a record changes in one system, there is no guarantee that its new value changes in another system.
+* Since there is no certainty of data synchronization, a data element can have conflicting values across systems.
+* When integrating multiple data sources, dealing with redundant data is a persistent challenge.
+* There are several options for resolving redundant data.
+* One approach synchronizes changes to shared data elements between the Accounting and Sales systems.
+* This integrated ETL process takes a delta load approach.
+* When an address changes, the ETL job sets the effective end date for the old address and inserts a new row for the current address.
+* While the data discrepancy between the Sales and Accounting systems still needs resolution, the analyst has the proper customer address in the data warehouse.
+* Another root cause of data redundancy is an inappropriate database design.
+* 
+
 
 
 
