@@ -829,7 +829,22 @@ When manipulating data, one of four possible actions occurs:
 * Null values present several challenges depending on the tools you use to analyze data.
 * Trying to calculate the average, which was successful in SQL, results in an error in Python and R as the equivalent functions in those languages do not handle null values.
 * To handle missing values, you first have to check for their existence.
-* QL offers functions to check for null and functions that can replace a null with a user-specified value. 
+* QL offers functions to check for null and functions that can replace a null with a user-specified value.
+
+# Invalid Data
+
+* Invalid data are values outside the valid range for a given attribute.
+* An invalid value violates a business rule instead of having an incorrect data type.
+* Invalid values violate business rules, not technical rules.
+* As such, programming languages do not have native functions that definitively tell you whether or not a given value is invalid.
+* When considering data types, numeric and date data is comparatively easy to check for invalid values.
+* Text data is more complex. One thing that leads to invalid character data is an absence of referential integrity within a database.
+* If two tables have a relationship but no foreign keys, the conditions for invalid character data exist.
+* Implementing relationships appropriately reduces the likelihood of invalid character data.
+
+ # Nonparametric Data
+
+ * 
 
 
 
