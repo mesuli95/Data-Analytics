@@ -925,7 +925,79 @@ When manipulating data, one of four possible actions occurs:
  * Replace with Zero:  With this approach, you replace missing values with a zero. Whether or not it is appropriate to replace missing data with a zero is contextual. In this case, zero isn't an appropriate value, as a person's weight should be a positive number. In addition, replacing a zero in this case has an extraordinary impact on the overall average weight.
  * Replace with Overall Average:  Instead of using a zero, you can compute the average Weight value for all rows that have data and then replace the missing Weight values with that calculated average.
  * Replace with Most Frequent (Mode):  Alternatively, you can take the most frequently occurring value, called the mode, and use that as the constant.
-* Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. For example, to replace the missing measurements for 2/13/2021 and 2/14/2021, take the values from 2/12/2021 and 2/15/2021 to compute the average. 
+* Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. For example, to replace the missing measurements for 2/13/2021 and 2/14/2021, take the values from 2/12/2021 and 2/15/2021 to compute the average.
+
+# Reduction 
+
+* When dealing with big data, it is frequently unfeasible and inefficient to manipulate the entire dataset during analysis.
+* Reduction is the process of shrinking an extensive dataset without negatively impacting its analytical value.
+* There are a variety of reduction techniques from which you can choose.
+* Selecting a method depends on the type of data you have and what you are trying to analyze.
+* Dimensionality reduction and numerosity reduction are two techniques for data reduction.
+
+# Dimentionality Reduction
+
+* One reduction technique is dimensionality reduction, which removes attributes from a dataset.
+* Removing attributes reduces the dataset's overall size.
+* However, you can use any programming language, including Python or R, to remove dimensions.
+
+# Numerosity Reduction
+
+* Another technique is numerosity reduction, which reduces the overall volume of data.
+* As data volumes grow, numerosity reduction can improve the efficiency of your analysis.
+* One way to reduce the volume of quantitative data is by creating a histogram.
+* You can create a histogram in Python, R, and many visualization-specific tools.
+*A histogram is a diagram made up of rectangles, or bars, that show how frequently a specific value occurs.
+
+# Aggregation
+
+* Data aggregation is the summarization of raw data for analysis. When you are dealing with billions of individual records, a data summary can help you make sense of it all.
+* You might want to know facts about the data that would be difficult to Figure out looking through the data by hand.
+* Aggregating data provides answers that help make decisions.
+*  Imagine you are on a road trip. While travelling, running out of fuel is the last thing you want to do.
+* Onboard computers summarize your control inputs and give you a meaningful metric: distance to empty.
+* With an understanding of how far you can travel with the fuel remaining, you have the data you need so you can stop, refuel, and avoid being stranded.
+
+# Transposition
+
+* Transposing data is when you want to turn rows into columns or columns into rows to facilitate analysis.
+* When transposing, each value from a column becomes a new column.
+* The transposed data could be more helpful, especially if you imagine thousands of rows of sales data.
+* Combining aggregation with transposition is a powerful data manipulation technique.
+* This data representation makes it easy to view performance across fiscal years at a glance.
+
+# Normalization
+
+* In the context of data manipulation, normalizing data differs from our discussion of database normalization in Chapter 3.
+* In this context, normalizing data converts data from different scales to the same scale.
+* If you want to compare columns whose measurements use different units, you want to normalize the data.
+* After normalization is complete, the dataset is ready for statistical analysis.
+
+# Min-Max Normalization
+
+* The first thing you need to do is find the minimum value of column you working with. Then, find the maximum value of the column you working with.
+* The value you want to convert within the column.
+* Min-max normalization is one of the most straightforward approaches to normalizing data.
+
+# Parsing/String Manipulation
+
+* Raw data can contain columns with composite or distributed structural issues.
+*  A composite issue is when a raw data source has multiple, distinct values combined within a single character column.
+*  When this happens, each value in a composite column has data that represents more than one attribute.
+* Composite columns need to be split into their component parts to aid analysis.
+* Similarly, it is possible to have a distributed structural issue when data in a single column spreads across multiple columns.
+* When that happens, you need to combine the individual columns.
+* Whenever you have composite or distributed structural data issues, you need to manipulate the strings before starting your analysis.
+* In order to analyse the data by date, the string manipulation process combines the values from the Day, Month, and Year columns into a new Date column.
+* Once you have a Date column, you can use programming functions to extract the day, month, and year if you need them.
+* You also may need to manipulate string data to improve data quality. 
+
+
+
+
+
+
+
  
 
 
