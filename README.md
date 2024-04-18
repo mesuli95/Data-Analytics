@@ -1092,6 +1092,9 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * You then cross-validate the model using the testing subset to determine how accurate the prediction is.
 * Cross-validation is also helpful in identifying data sampling issues.
 
+# Data Analysis and Statistics
+
+
 
 
 
