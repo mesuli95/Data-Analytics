@@ -1094,6 +1094,81 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 
 # Data Analysis and Statistics
 
+# Descriptive Statistics
+
+* Descriptive statistics is a branch of statistics that summarizes and describes data. As you explore a new dataset for the first time, you want to develop an initial understanding of the size and shape of the data.
+* You use descriptive statistics as measures to help you understand the characteristics of your dataset.
+* When initially exploring a dataset, you may perform univariate analysis to answer questions about a variable's values.
+* You also use descriptive measures to develop summary information about all of a variable's observations.
+* This context helps orient you and informs the analytical techniques you use to continue your analysis.
+
+# Measure of Frequency 
+
+* Measures of frequency help you understand how often something happens.
+* When encountering a dataset for the first time, you want to determine how much data you are working with to help guide your analysis.
+* For example, suppose you are working with human performance data.
+* One of the first things to understand is the size of the dataset. One way to accomplish this quickly is to count the number of observations.
+* Understanding the total number helps influence the tools you use to explore the data.
+
+# Count
+
+* The most straightforward way to understand how much data you're working with is to count the number of observations.
+* Understanding the total number of observations is a frequently performed task. As such, there is a count function in everything from spreadsheets to programming languages.
+
+# Percentage
+
+* The percentage is a frequency measure that identifies the proportion of a given value for a variable with respect to the total number of rows in the dataset.
+* To calculate a percentage, you need the total number of observations and the total number of observations for a specific value of a variable.
+* Understanding proportions across a dataset aids in determining how you proceed with your analysis.
+
+# Frequency 
+
+* Frequency describes how often a specific value for a variable occurs in a dataset. You typically explore frequency when conducting univariate analysis.
+
+# Measures of Central Tendency 
+
+* To help establish an overall perspective on a given dataset, an analyst explores various measures of central tendency.
+* You use measures of central tendency to identify the central, or most typical, value in a dataset.
+* There are numerous ways to measure central tendency, and you end up using them in conjunction with each other to understand the shape of your data.
+
+# Mean
+
+* The mean, or average, is a measurement of central tendency that computes the arithmetic average for a given set of numeric values.
+* To calculate the mean, you take the sum of all values for an observation and divide by the number of observations.
+* Data analysis tools, including spreadsheets, programming languages, and visualization tools, all have functions that calculate the mean.
+* While the mean is one of the most common measurements of central tendency, remember that you can only calculate a mean for quantitative data.
+* You should also be mindful of the effect outliers have on the mean's value.
+* An outlier is a value that differs significantly from the other values of the same observation.
+
+# Median
+
+* Another measurement of central tendency is the median, which identifies the midpoint value for all observations of a variable.
+* The first step to calculating the median is sorting your data numerically.
+* Once you have an ordered list of values, the next step depends on whether you have an even or an odd number of observations for a variable.
+* Identifying the median for an odd number of observations is straightforward—you just select the number in the middle of the ordered list of values.
+* Suppose you have the following numbers: {1,3,5,7,9}. To find the median, you take the total number of values, add 1, divide by 2, and retrieve the corresponding value.
+* For datasets with an even number of observations, you need to take the average of the two observations closest to the midpoint of the ordered list.
+* Suppose you have the following numbers: {1,3,5,7,9,11}. Since there are six observations, the median is the mean of the values that surround the midpoint.
+* In this case, you find the mean of 5 and 7, which is 6.
+* Outliers don't impact the median as dramatically as the mean.
+
+# Mode
+
+* The mode is a variable's most frequently occurring observation. Depending on your data, you may not have a mode.
+* Depending on the level of precision and amount of data, the mode may not facilitate insight when working with numeric data.
+* However, the mode is more applicable when working with categorical data.
+
+# Measures of Dispersion
+
+# Range 
+
+* The range of a variable is the difference between its maximum and minimum values.
+* Understanding the range helps put the data you are looking at into context and can help you determine what to do with outlier values. 
+
+
+
+
+
 
 
 
