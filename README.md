@@ -1070,7 +1070,27 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 
 * Another method to keep in mind is auditing your data. Data audits look at your data and help you understand whether or not you have the data you need to operate your business.
 * Data audits use data profiling techniques and can help identify data integrity and security issues.
-* 
+* For example, suppose you work with a large company that has relationships with numerous suppliers.
+* To understand what is reasonable, you create a report to show the average payment amount by the supplier.
+* For example, suppose you work with a large company that has relationships with numerous suppliers.
+* To understand what is reasonable, you create a report to show the average payment amount by the supplier.
+* One day, you notice an unusually large supplier payment. Looking into the disbursement, you also discover that the payment was sent to a new financial institution.
+
+# Sampling
+
+* Another method for validating data quality is by examining a sample of your data. Sampling is a statistical technique in which you use a subset of your data to inform conclusions about your overall data.
+* For example, suppose you are an automotive manufacturer and want to ensure the quality of fasteners from one of your suppliers. Suppose you have a daily production volume of 10,000 at one of your assembly plants.
+* If each vehicle requires 3,500 fasteners, you need 35 million per day.
+* Fastener failures can lead to quality issues, safety issues, and recalls. All of these quality issues are expensive to address and generate bad press.
+
+# Cross-Validation
+
+* Analysts frequently use existing data to generate predictive models using a variety of statistical methods.
+* Cross-validation is a statistical technique that evaluates how well predictive models perform.
+* Cross-validation works by dividing data into two subsets. The first subset is the training set, and the second is the testing, or validation, set.
+* You use data from the training set to build a predictive model.
+* You then cross-validate the model using the testing subset to determine how accurate the prediction is.
+* Cross-validation is also helpful in identifying data sampling issues.
 
 
 
