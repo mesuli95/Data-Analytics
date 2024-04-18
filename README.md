@@ -864,7 +864,73 @@ When manipulating data, one of four possible actions occurs:
 
 # Data type Validation
 
-* 
+* Data type validation ensures that values in a dataset have a consistent data type.
+* Programming languages, including SQL, Python, and R, all have data type validation functions. Use these functions to validate the data type for each column in a data file before attempting a database load.
+* It's in your best interest to detect and remediate data type issues as early as possible to ensure data is ready for analysis.
+
+# Data Manipulation Techniques
+
+# Recoding Data
+
+* Recoding data is a technique you can use to map original values for a variable into new values to facilitate analysis.
+* Recoding groups data into multiple categories, creating a categorical variable. A categorical variable is either nominal or ordinal.
+* Nominal variables are any variable with two or more categories where there is no natural order of the categories, like hair color or eye color.
+* Ordinal variables are categories with an inherent rank.
+
+# Derived Variables
+
+* A derived variable is a new variable resulting from a calculation on an existing variable.
+* Storing age as a derived column is a bad practice, as it would need constant updates over time.
+* Instead of keeping age as a derived variable, you should embed the formula to derive age in code.
+
+# Data Merge
+
+* A data merge uses a common variable to combine multiple datasets with different structures into a single dataset.
+* Merging data improves data quality by adding new variables to your existing data.
+* Additional variables make for a richer dataset, which positively impacts the quality of your analysis.
+* ETL processes commonly append data while transforming data for use in analytical environments.
+
+# Data Blending
+
+* Data blending combines multiple sources of data into a single dataset at the reporting layer.
+* While data blending is conceptually similar to the extract, transform, and load process, there is a crucial difference.
+* Data blending differs from ETL in that it allows an analyst to combine datasets in an ad hoc manner without saving the blended dataset in a relational database.
+* Instead of the blended dataset persisting over time, it exists only at the reporting layer, not in the source databases.
+* For example, data visualization tools such as Tableau allow analysts to connect to different source systems and blend the data using a shared attribute.
+* Data blending can reduce the burden on IT as it gives analysts the ability to merge data.
+
+# Concatenation
+
+* Concatenation is the merging of separate variables into a single variable.
+* Concatenation is a highly effective technique when dealing with a source system that stores components of a single variable in multiple columns.
+* The need for concatenation frequently occurs when dealing with date and time data. Concatenation is also useful when generating address information.
+
+# Data Append
+
+* A data append combines multiple data sources with the same structure, resulting in a new dataset containing all the rows from the original datasets.
+* When appending data, you save the result as a new dataset for ongoing analysis.
+* Consider the needs of a franchisor with multiple franchisee locations.
+* Although each franchise operates independently, they use the same point of sales system.
+* When the franchisor conducts aggregate sales analysis, it appends data from each franchisee's point of sales system into a single, unified table for ongoing analysis.
+
+# Imputation
+
+* Imputation is a technique for dealing with missing values by replacing them with substitutes.
+*  When merging multiple data sources, you may end up with a dataset with many nulls in a given column.
+* If you are collecting sensor data, it is possible to have missing values due to collection or transmission issues.
+
+ # Here are a few approaches an analyst can use for imputing values:
+
+ * Remove Missing Data:  With this approach, you can remove rows with missing values without impacting the quality of your overall analysis.
+ * Replace with Zero:  With this approach, you replace missing values with a zero. Whether or not it is appropriate to replace missing data with a zero is contextual. In this case, zero isn't an appropriate value, as a person's weight should be a positive number. In addition, replacing a zero in this case has an extraordinary impact on the overall average weight.
+ * Replace with Overall Average:  Instead of using a zero, you can compute the average Weight value for all rows that have data and then replace the missing Weight values with that calculated average.
+ * Replace with Most Frequent (Mode):  Alternatively, you can take the most frequently occurring value, called the mode, and use that as the constant.
+* Closest Value Average:  With this approach, you use the values from the rows before and after the missing values. For example, to replace the missing measurements for 2/13/2021 and 2/14/2021, take the values from 2/12/2021 and 2/15/2021 to compute the average. 
+ 
+
+
+
+
 
 
 
