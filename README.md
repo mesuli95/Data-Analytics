@@ -990,7 +990,97 @@ When manipulating data, one of four possible actions occurs:
 * Whenever you have composite or distributed structural data issues, you need to manipulate the strings before starting your analysis.
 * In order to analyse the data by date, the string manipulation process combines the values from the Day, Month, and Year columns into a new Date column.
 * Once you have a Date column, you can use programming functions to extract the day, month, and year if you need them.
-* You also may need to manipulate string data to improve data quality. 
+* You also may need to manipulate string data to improve data quality.
+
+# Circumstances to Check for Quality
+Errors during data acquisition, transformation, manipulation, and visualization all contribute to degrading data quality. You should recognize the types of quality issues that can occur and have an overarching strategy to ensure the quality of your data.
+
+* Data Acquisition
+* Data Transformation and Conversion
+* Data Manipulation
+* Final Product Preparation
+
+# Automated Validation
+
+* Many data sources feed analytics environments. While some of these data sources are other computer systems, others depend directly on people.
+* Whenever people interact with systems, it's possible to introduce data-related errors.
+* Whether source data is machine- or human-generated, one way to prevent data entry mistakes from adversely impacting data quality is to automate data validation checks.
+* Before automatically validating input data, you need to understand how source data fields map to their corresponding database columns.
+* When mapping input data, pay close attention to the data types in the database.
+* For example, suppose you have a web form where customers supply phone numbers, and the destination database uses a numeric data type to store phone data.
+* If the input form allows for free text entry, someone may enter (312) 555-1212. Attempting to insert the parentheses and hyphen into a numeric column results in a database error due to a data type mismatch. 
+* Automating the data type validation before passing the data to the database prevents this from happening.
+* Another example of automation is verifying the number of data points. For example, suppose you are collecting hourly temperature data from a collection of sensors.
+* For each sensor, you would expect to have 24 data points per day. If a sensor fails, it no longer reports data.
+* Automating the verification of the number of data points instead of their values can help you identify a sensor failure.
+* Early identification of sensor failure prevents missing data from flowing into your analytics environment.
+
+# Data Quality Dimentions
+
+* It is essential to consider multiple attributes of data when considering its quality.
+* Six dimensions to take into account when assessing data quality are accuracy, completeness, consistency, timeliness, uniqueness, and validity.
+* Understanding these dimensions and how they are related will help you improve data quality.
+# 6 Dimensions of Improving Data
+
+* Data Accuracy
+* Data Completeness
+* Data Consistency
+* Data Timeliness
+* Data Uniqueness
+* Data Validity
+
+# Data Quality Rules and Metrics
+
+* With an understanding of data quality dimensions, you need to consider how to measure each of them in your quest to improve overall quality.
+* When consolidating data from multiple source systems into an analytics environment, one factor you want to assess is the conformity or nonconformity of data.
+* If source data does not match the destination data type size and format, you have nonconformity.
+* If source data does not match the destination data type size and format, you have nonconformity.
+* One way to validate data conformity issues is to confirm how many rows pass successfully to the target environment and how many fail.
+* Suppose you have 1 million billing records to migrate into the Data Warehouse.
+* Instead of aborting the entire data load, the Warehouse Load ETL job sends the 100,000 nonconforming rows to a Bad Data staging area.
+* A data engineer then resolves the root cause of the data quality issue before sending the remediated data into the Data Warehouse.
+* With this design, the nonconformity of a single row does not cause the entire load process to fail.
+* By only reprocessing failed rows, this approach makes efficient use of resources as well as improving quality.
+
+# Methods to Validate Quality
+
+# Reasonable Expectations
+
+* One approach is to determine whether or not the data in your analytics environment meets your reasonable expectations.
+* For example, if your transactional systems process 10 million records per day, it is reasonable to expect an incremental 300 million records in your analytics environment at the end of 30 days
+* If after 30 days you only see an additional 20 million records, it is reasonable for you to presume that the data propagation ETL is failing.
+* It is worth spending time reflecting on what measures are reasonable for your environment.
+* After defining how you want to measure your expectations, automate the reasonable expectation check by creating exception reports as part of your ETL processes.
+* For example, if the number of successful rows is less than a large percentage of attempted rows, your internal alarm bells should start ringing.
+* The root cause of the ETL load failure needs remediation to prevent ongoing issues with data quality.
+
+# Data Profiling
+
+* Another approach to improving quality is to profile your data.
+* Data profiling uses statistical measures to check for data discrepancies, including values that are missing, that occur either infrequently or too frequently, or that should be eliminated.
+* Profiling can also identify irregular patterns within your data.
+* For example, suppose you are trying to analyse customer engagement by examining the frequency with which customers log into your website.
+* On average, you see that customers log in once per day from one of four devices.
+* However, profiling your data shows that a specific customer is logging in three hundred times per day from three hundred unique devices.
+* Further analysis shows that these logins originate from multiple different places around the globe.
+* The results of your data profiling activity fail the reasonable expectation test, as customers typically log in less frequently and from fewer devices.
+* Instead of trusting this data, you proceed to investigate whether or not this activity is fraudulent.
+
+# Data Audits
+
+* Another method to keep in mind is auditing your data. Data audits look at your data and help you understand whether or not you have the data you need to operate your business.
+* Data audits use data profiling techniques and can help identify data integrity and security issues.
+* 
+
+
+
+
+
+
+
+
+
+
 
 
 
