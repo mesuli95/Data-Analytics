@@ -1163,7 +1163,62 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 # Range 
 
 * The range of a variable is the difference between its maximum and minimum values.
-* Understanding the range helps put the data you are looking at into context and can help you determine what to do with outlier values. 
+* Understanding the range helps put the data you are looking at into context and can help you determine what to do with outlier values.
+
+# Distribution
+
+* In statistics, a probability distribution, or distribution, is a function that illustrates probable values for a variable, and the frequency with which they occur.
+* Histograms are an effective tool to visualize a distribution, because the shape provides additional insight into your data and how to proceed with analysis.
+* Distributions have many possible shapes, including normal, skewed, and bimodal.
+
+# Normal Distribution
+
+* The normal distribution is symmetrically dispersed around its mean, which gives it a distinctive bell-like shape.
+* Due to its shape, the normal distribution is also known as a “bell curve.”
+* The normal distribution is applicable across a number of disciplines due to the central limit theorem (CLT), a foundational theorem for statistical analysis.
+* According to the CLT, as sample size increases, it becomes increasingly likely that the sampling distribution of all those means will be normally distributed.
+* For example, suppose you are working with quantitative data about people. According to the CLT, you can expect the normal distribution to describe the people's height, weight, and shoe size.
+* You can test out the CLT at home by rolling a pair of dice at least 30 times to get a sufficiently large sample and then plotting the value and frequency of your rolls.
+* One way to use measures of central tendency to verify the normal distribution is to examine the proximity of the mean and median.
+* When the mean and median are relatively close together, the distribution will be symmetrical. If the mean and median are far apart, the data is skewed, or asymmetrical.
+
+# Skewed Distribution
+
+* A skewed distribution has an asymmetrical shape, with a single peak and a long tail on one side. Skewed distributions have either a right (positive) or left (negative) skew.
+* When the skew is to the right, the mean is typically greater than the median. On the other hand, a distribution with a left skew typically has a mean less than the median.
+* The long tail to the right of the peak shows that while most people have a salary of under $100,000, a large portion of the population earns significantly more.
+* It is reasonable to expect a right skew for income.
+* There are times when you would expect to see a left skew in the data. For example, imagine grades on a 100-point exam for students in a graduate statistics class.
+
+ # Bimodal Distribution
+
+ * A bimodal distribution has two distinct modes, whereas a multimodal distribution has multiple distinct modes. When you visualize a bimodal distribution, you see two separate peaks.
+ * Suppose you are analyzing the number of customers at a restaurant over time. You would expect to see a large numbers of customers at lunch and dinner.
+ * 
+
+# Variance
+
+* Variance is a measure of dispersion that takes the values for each observation in a dataset and calculates how far away they are from the mean value.
+* This dispersion measure indicates how spread out the data is in squared units. Mathematically,  signifies population variance, which you calculate by taking the average squared deviation of each value from the mean.
+* The slight difference in the denominator between the formulas for calculating population and sample variance is due to a technique known as Bessel's correction.
+* Bessel's correction specifies that when calculating sample variance, you need to account for bias, or error, in your sample.
+* Recall that a sample does not fully represent the overall population. When you have sample data and use the degrees of freedom in the denominator, it provides an unbiased estimate of the variability.
+* When the variance is large, the observations’ values are far from the mean and thus far from each other. Meanwhile, a small variance implies that the values are close together.
+
+# Standard Deviation
+
+* Standard deviation is a statistic that measures dispersion in terms of how far values of a variable are from its mean. Specifically, standard deviation is the average deviation between individual values and the mean.
+* Mathematically,  signifies population standard deviation, which you calculate by taking the square root of the variance.
+* Similar to the difference between population and sample variance, the formula for sample standard deviation uses Bessel's correction.
+* Standard deviation is a widely accepted measure of quality control in manufacturing processes. Large manufacturers implement programs to improve the consistency of their manufacturing processes.
+* Combining the central limit theorem and the empirical rule makes standard deviation a common way of describing and discussing variability.
+* One quality control program is known as Six Sigma, which sets the goal for a production process to six standard deviations. Achieving that degree of consistency is difficult and expensive.
+
+# Special Normal Distribution
+
+* 
+
+
 
 
 
