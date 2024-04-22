@@ -1240,7 +1240,7 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
 
 <details>
- <summary> Week 3 </summary>
+<summary> Week 3 </summary>
 
 
  </details>
