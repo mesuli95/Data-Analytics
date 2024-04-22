@@ -1216,6 +1216,23 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 
 # Special Normal Distribution
 
+* The Central Limit Theorem and empirical rule combine to make the normal distribution the most important distribution in statistics. There are two special normal distributions that have broad applicability and warrant a deeper understanding.
+
+# Standard Normal Distribution
+
+* The standard normal distribution, or Z-distribution, is a special normal distribution with a mean of 0 and a standard deviation of 1.
+* You can standardize any normal distribution by converting its values into Z-scores.
+* Converting to the standard normal lets you compare normal distributions with different means and standard deviations.
+
+ # Student T-Distribution
+
+ * The Student's t-distribution, commonly known as the t-distribution, is similar to the standard normal distribution in that it has a mean of 0 with a bell-like shape.
+ * One way the t-distribution differs from the standard normal distribution is how thick the tails are since you can use the t-distribution for sample sizes of less than 30.
+ * It's crucial to note that the height of the bell and the thickness of the tails in t-distributions vary due to the number of degrees of freedom. Numerically, the value for degrees of freedom is 1 less than the number of observations in your sample data.
+ * The degrees of freedom represent the number of values that can vary when calculating a statistic.
+
+# Measure of Position
+
 * 
 
 
