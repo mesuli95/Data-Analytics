@@ -1243,6 +1243,9 @@ Errors during data acquisition, transformation, manipulation, and visualization 
  <summary> Week 3 </summary>
 
 
+ </details>
+
+
 
 
 
