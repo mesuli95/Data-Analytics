@@ -1233,7 +1233,14 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 
 # Measure of Position
 
-* 
+* Understanding a specific value for a variable relative to the other values for that variable gives you an indication of the organization of your data. Statisticians commonly use quartiles to describe a specific observation's position.
+* The process of obtaining quartiles is similar to that of determining the median. You first sort a numeric dataset from smallest to largest and divide it positionally into four equal groups.
+* Each grouping is known as a quartile. The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
+* The interquartile range (IQR) is the combination of the second and third quartiles and contains 50 percent of the values in the data. When exploring a dataset, recall that outliers can have a significant impact on mean and range.
+* Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
+
+<details>
+ <summary> Week 3 </summary>
 
 
 
