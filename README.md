@@ -1239,11 +1239,15 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * The interquartile range (IQR) is the combination of the second and third quartiles and contains 50 percent of the values in the data. When exploring a dataset, recall that outliers can have a significant impact on mean and range.
 * Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
 
-<details>
-<summary> Week 3 </summary>
+
 
 
  </details>
+
+ <details>
+<summary> Week 3 </summary>
+
+</details>
 
 
 
