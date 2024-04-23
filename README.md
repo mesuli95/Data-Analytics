@@ -1214,6 +1214,8 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * Combining the central limit theorem and the empirical rule makes standard deviation a common way of describing and discussing variability.
 * One quality control program is known as Six Sigma, which sets the goal for a production process to six standard deviations. Achieving that degree of consistency is difficult and expensive.
 
+# Measure of Position
+
 # Special Normal Distribution
 
 * The Central Limit Theorem and empirical rule combine to make the normal distribution the most important distribution in statistics. There are two special normal distributions that have broad applicability and warrant a deeper understanding.
@@ -1238,6 +1240,7 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * Each grouping is known as a quartile. The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
 * The interquartile range (IQR) is the combination of the second and third quartiles and contains 50 percent of the values in the data. When exploring a dataset, recall that outliers can have a significant impact on mean and range.
 * Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
+* 
 
 
 
