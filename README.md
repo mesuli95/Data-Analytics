@@ -1300,7 +1300,14 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * Simple linear regression is an analysis technique that explores the relationship between an independent variable and a dependent variable.
 * You can use linear regression to identify whether the independent variable is a good predictor of the dependent variable.
 * You can perform a regression analysis in spreadsheets like Microsoft Excel and programming languages, including Python and R. When plotting the results of a regression, the independent variable is on the x-axis and the dependent variable is on the y-axis.
+* Simple linear regression has many applications. For example, you might use simple linear regression to assess the impact of a marketing promotion on a company's sales.
+* In healthcare, you might explore the relationship between a person's age and body mass index (BMI).
+* The line in Figure 5.23 represents the regression line that best fits the data, minimizing the distance between the points and the line itself.
+* Since the regression line inclines to the right, it has a positive slope. If the line declines to the right, it will have a negative slope.
+* The positive slope of the regression line implies that as age increases, BMI increases as well. Since the slope is so slight, BMI does not increase dramatically as a function of age.
 * 
+
+ 
 
  </details>
 
