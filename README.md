@@ -1240,10 +1240,67 @@ Errors during data acquisition, transformation, manipulation, and visualization 
 * Each grouping is known as a quartile. The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
 * The interquartile range (IQR) is the combination of the second and third quartiles and contains 50 percent of the values in the data. When exploring a dataset, recall that outliers can have a significant impact on mean and range.
 * Using the IQR as a dispersion indicator, in addition to the range, improves your perspective since the IQR excludes outliers.
+
+# Inferential Statistics
+
+* Inferential statistics is a branch of statistics that uses sample data to draw conclusions about the overall population.
+*  For example, suppose you are trying to quantify the weight of college students in the United States.
+* With more than 20 million college students, getting a complete census is not feasible.
+* By combining balanced, representative sample data with inferential statistical techniques, you can confidently make assertions about the broader population.
+
+# Confidence Intervals
+
+* Each time you take a sample from a population, the statistics you generate are unique to the sample. In order to make inferences about the population as a whole, you need a way to come up with a range of scores that you can use to describe the population as a whole.
+* A confidence interval describes the possibility that a sample statistic contains the true population parameter in a range of values around the mean.
+* When calculating a confidence interval, you end up with a lower bound value and an upper bound value. Given the confidence interval range, the lower bound is the lower limit, and the upper bound is the upper limit.
+
+# Confidence IntervaL Considerations
+
+* While it is possible to develop a confidence interval for a skewed distribution, our conversation will focus on a normal distribution and presume the sample mean, population standard deviation, and sample size are known.
+* When calculating a confidence interval, you need to specify the confidence level in addition to the sample mean, population standard deviation, and sample size.
+* Based on the empirical rule, the confidence level is a percentage that describes the range around the mean.
+* The wider the confidence level, the more confident one can be in capturing the true mean for the sample.
+* High confidence levels have a wide confidence interval, while low confidence levels have a narrower confidence interval.
+* The critical value is a Z-score you specify to denote the percentage of values you want the confidence interval to include.
+* Since deriving critical values is beyond the scope of this course.
+* In addition to the critical value, you need the standard error. The standard error measures the standard deviation of the distribution of means for a given sample size.
+* You calculate the standard error by taking the population standard deviation divided by the square root of the sample size.
+
+# Hypothesis Testing with the Z-test
+
+* Hypothesis testing with the Z-test is appropriate when you have a sample size over 30 and a known population standard deviation, and you are using the normal distribution.
+* When performing a two-tailed Z-test, you can use the Z-score from Table 5.10 to specify your confidence level. 
+* The Z-score describes how far away from the mean a given value is.
+* You then collect a random sample of bags from the production line. Suppose your sample contains 100 bags. You proceed to calculate the test statistic by getting the average number of mints per bag.
+
+# Hypothesis Testing With The T-Test
+
+* Frequently, the standard deviation of the population is unknown. It's also possible that you will have a sample size of less than 30.
+* In either of those cases, the Z-test is not an option. In this case, you can perform a t-test. A t-test is conceptually similar to a Z-test, but uses the t-distribution instead of the standard normal distribution.
+* You interpret the results of a t-test the same way you interpret a Z-test in terms of critical regions, confidence levels, and p-values.
+* For example, suppose you want to have the same situation in terms of determining whether or not people over 75 inches tall are willing to pay for additional legroom on a flight. However, due to time constraints, you are only able to collect a sample of 10.
+* You also don't have precise data on the standard deviation on the payment variability for the population of flyers who are over 75 inches in height. As such, you can use a t-test to evaluate your null and alternative hypotheses.
+
+# Hypothesis Testing With Chi-Square
+
+* Z-tests and t-tests work well for numeric data. However, there are times when you want to compare the observed frequencies of categorical variables against what was expected.
+* The chi-square test is available when you need to assess the association of two categorical variables.
+* In this case, the null hypothesis asserts that there is no association between the variables, and the alternative hypothesis states that there is an association between them.
+* For example, suppose you want to determine whether a statistically significant association exists between a person's eye colour and their favourite music genre.
+* To test this, you survey 100 random people, record their eye colour, and ask them their favourite movie genre.
+* After obtaining the data, you perform a chi-square test to assess whether there is a statistically significant relationship between eye colour and movie genre.
+* If the results suggest you retain the null, the two variables are independent.
+*  If the results suggest you reject the null, then some sort of relationship exists between eye colour and favourite movie genre.
+* Another example where the chi-square test is appropriate is if you want to understand the relationship between a person's favourite sport to watch and where they attend university.
+* To test this, you would survey 10 random people from each university and ask them to select their favourite sport.
+* Once you have the data, you perform a chi-square test to determine whether there is a statistically significant association between each person's university and their favourite sport.
+
+# Simple Linear Regression
+
+* Simple linear regression is an analysis technique that explores the relationship between an independent variable and a dependent variable.
+* You can use linear regression to identify whether the independent variable is a good predictor of the dependent variable.
+* You can perform a regression analysis in spreadsheets like Microsoft Excel and programming languages, including Python and R. When plotting the results of a regression, the independent variable is on the x-axis and the dependent variable is on the y-axis.
 * 
-
-
-
 
  </details>
 
